@@ -18,10 +18,9 @@ const Banner = () => {
             </div>
 
          </div>
-
-
-         <div className="w-full md:w-1/2 ">
-            <img src={myImg} alt="saiful image" className="h-96 object-cover w-full rounded-xl border-r-8 border-t-8 border-lime-500" />
+ 
+         <div className="w-full md:w-1/2 overflow-hidden rounded-xl">
+            <img src={myImg} alt="saiful image" className="h-96 object-cover w-full rounded-xl border-r-8 border-t-8 border-lime-500 hover:scale-110 duration-1000" />
          </div>
 
       </div>

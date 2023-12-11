@@ -12,6 +12,7 @@ import Navbar from '../../components/Navbar';
 import Banner from '../../components/Banner';
 import { Container } from '@mui/material';
 import { Cursor } from 'custom-pointer-react';
+import Skills from '../../components/Skills';
 
 function ScrollTop(props) {
    const { children, window } = props;
@@ -67,18 +68,9 @@ export default function Home(props) {
          <Navbar></Navbar>
          <Toolbar id="back-to-top-anchor" />
          {/* Content */}
-         {/* <Container>
-            <Box sx={{ my: 2 }}>
-               {[...new Array(12)]
-                  .map(
-                     () => `Cras mattis consectetur purus sit amet fermentum.Cras justo odio, dapibus ac facilisis in, egestas eget quam.Cras mattis consectetur purus sit amet fermentum.Cras justo odio, dapibus ac facilisis in, egestas eget quam.Cras mattis consectetur purus sit amet fermentum.Cras justo odio, dapibus ac facilisis in, egestas eget quam.Cras mattis consectetur purus sit amet fermentum.Cras justo odio, dapibus ac facilisis in, egestas eget quam. `,
-                  )
-                  .join('\n')}
-            </Box>
-         </Container> */}
-
          <Container>
             <Banner></Banner>
+            <Skills></Skills>
          </Container>
 
          <ScrollTop {...props}>
