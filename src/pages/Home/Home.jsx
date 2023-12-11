@@ -13,6 +13,7 @@ import Banner from '../../components/Banner';
 import { Container } from '@mui/material';
 import { Cursor } from 'custom-pointer-react';
 import Skills from '../../components/Skills';
+import Projects from '../../components/projects';
 
 function ScrollTop(props) {
    const { children, window } = props;
@@ -61,8 +62,8 @@ export default function Home(props) {
             showRing={true}
             color='#84CC16'
             ringSize={25}
-            cursorSize={5}
-            ringBorder={1}
+            cursorSize={0}
+            ringBorder={2}
          />
          {/* Navbar */}
          <Navbar></Navbar>
@@ -71,6 +72,7 @@ export default function Home(props) {
          <Container>
             <Banner></Banner>
             <Skills></Skills>
+            <Projects></Projects>
          </Container>
 
          <ScrollTop {...props}>

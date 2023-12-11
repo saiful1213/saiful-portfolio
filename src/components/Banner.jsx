@@ -3,8 +3,9 @@ import DownloadIcon from '@mui/icons-material/Download';
 import ArticleIcon from '@mui/icons-material/Article';
 
 const Banner = () => {
+   
    return (
-      <div className="flex flex-col md:flex-row items-center mt-0 md:mt-8 lg:mt-0 gap-8 md:gap-0 py-4 lg:h-[90vh]">
+      <div id="banner" className="flex flex-col md:flex-row items-center mt-0 md:mt-8 lg:mt-0 gap-8 md:gap-0 py-4 lg:h-[90vh]">
 
          <div className="w-full md:w-1/2 mt-8 md:mt-0">
             <p className="text-2xl text-white mb-4">Hi, I am <span className="text-lime-500">-</span></p>

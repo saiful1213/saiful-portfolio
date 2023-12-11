@@ -6,14 +6,22 @@ import reactImg from "../assets/react.png";
 import expressImg from "../assets/express.png";
 import nodeImg from "../assets/node.png";
 import mongodbImg from "../assets/mongodb.png";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Skills = () => {
+
+   useEffect(() => {
+      AOS.init();
+   }, [])
+
    return (
-      <div className="mt-28 pb-16">
+      <div className="mt-28" id="skills">
          <h1 className="text-4xl text-white text-center font-bold">Skills</h1>
-         
-         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-10 mt-16">
+
+         <div data-aos="zoom-in" data-aos-duration="1000" className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-10 mt-16">
             <div className="flex items-center gap-4 border rounded-xl px-4 py-2 border-lime-500 hover:bg-lime-500 hover:bg-opacity-30 duration-1000">
                <img src={htmlImg} alt="htmlImg" className="h-12" />
                <h2 className="text-white font-semibold">HTML</h2>
