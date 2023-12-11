@@ -5,12 +5,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 const Navbar = () => {
 
    const navItems = <>
-      <li className="ml-5 text-lg text-white"><a href="#about">About</a></li>
-      <li className="ml-5 text-lg text-white"><a href="#skills">Skills</a></li>
-      <li className="ml-5 text-lg text-white"><a href="#projects">Projects</a></li>
-      <li className="ml-5 text-lg text-white"><a href="#contact">Contact</a></li>
+      <li className="ml-5 text-lg text-white hover:underline underline-offset-8 decoration-lime-500 decoration-2 hover:duration-150 hover:ease-in-out"><a href="#about">About</a></li>
+      <li className="ml-5 text-lg text-white hover:underline underline-offset-8 decoration-lime-500 decoration-2 hover:duration-150 hover:ease-in-out"><a href="#skills">Skills</a></li>
+      <li className="ml-5 text-lg text-white hover:underline underline-offset-8 decoration-lime-500 decoration-2 hover:duration-150 hover:ease-in-out"><a href="#projects">Projects</a></li>
+      <li className="ml-5 text-lg text-white hover:underline underline-offset-8 decoration-lime-500 decoration-2 hover:duration-150 hover:ease-in-out"><a href="#contact">Contact</a></li>
    </>
-
 
    //  When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar
    let prevScrollpos = window.scrollY;
@@ -37,17 +36,12 @@ const Navbar = () => {
                         {navItems}
                      </ul>
                   </div>
-                  <Link to='/'><button className="btn btn-ghost text-2xl p-0 text-white"><span className="text-lime-500">_</span> Sa<span className="text-lime-500">i</span>ful <span className="text-lime-500">_</span></button></Link>
+                  <Link to='/'><button className="btn btn-ghost text-2xl p-0 text-white"><span className="text-lime-500">_</span> sA<span className="text-lime-500">i</span>uL <span className="text-lime-500">_</span></button></Link>
                </div>
-               {/* <div className="navbar-center hidden lg:flex">
-                  <ul className="menu menu-horizontal px-1">
-                     {navItems}
-                  </ul>
-               </div> */}
                <div className="navbar-end hidden lg:flex">
                   <ul className="menu menu-horizontal px-1">
                      {navItems}
-                     <button className="btn btn-outline border-lime-500 border-2 text-white ml-5">Resume</button>
+                     <button className="btn btn-outline hover:text-lime-500 border-lime-500 border-2 text-white ml-5 md:hidden xl:block">Resume</button>
                   </ul>
                </div>
             </div>

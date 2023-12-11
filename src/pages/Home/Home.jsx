@@ -58,7 +58,7 @@ export default function Home(props) {
          <CssBaseline />
          <Cursor
             showRing={true}
-            color='#000000'
+            color='#84CC16'
             ringSize={25}
             cursorSize={5}
             ringBorder={1}
