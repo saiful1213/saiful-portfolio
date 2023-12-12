@@ -4,7 +4,6 @@ import Toolbar from '@mui/material/Toolbar';
 import CssBaseline from '@mui/material/CssBaseline';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Box from '@mui/material/Box';
-// import Container from '@mui/material/Container';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fade from '@mui/material/Fade';
@@ -14,6 +13,7 @@ import { Container } from '@mui/material';
 import { Cursor } from 'custom-pointer-react';
 import Skills from '../../components/Skills';
 import Projects from '../../components/projects';
+import Contact from '../../components/contact';
 
 function ScrollTop(props) {
    const { children, window } = props;
@@ -66,13 +66,14 @@ export default function Home(props) {
             ringBorder={2}
          />
          {/* Navbar */}
-         <Navbar></Navbar>
+         <div id="home"><Navbar></Navbar></div>
          <Toolbar id="back-to-top-anchor" />
          {/* Content */}
          <Container>
             <Banner></Banner>
             <Skills></Skills>
             <Projects></Projects>
+            <Contact></Contact>
          </Container>
 
          <ScrollTop {...props}>
@@ -83,3 +84,4 @@ export default function Home(props) {
       </React.Fragment>
    );
 }
+
