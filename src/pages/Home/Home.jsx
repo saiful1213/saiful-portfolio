@@ -14,6 +14,7 @@ import { Cursor } from 'custom-pointer-react';
 import Skills from '../../components/Skills';
 import Projects from '../../components/projects';
 import Contact from '../../components/contact';
+import Footer from '../../components/Footer';
 
 function ScrollTop(props) {
    const { children, window } = props;
@@ -75,6 +76,7 @@ export default function Home(props) {
             <Projects></Projects>
             <Contact></Contact>
          </Container>
+         <Footer></Footer>
 
          <ScrollTop {...props}>
             <Fab size="small" aria-label="scroll back to top">

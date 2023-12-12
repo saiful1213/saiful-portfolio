@@ -40,7 +40,9 @@ const Navbar = () => {
                <div className="navbar-end hidden lg:flex">
                   <ul className="menu menu-horizontal px-1">
                      {navItems}
-                     <button className="btn btn-outline hover:text-lime-500 border-lime-500 border-2 text-white ml-5 md:hidden xl:block">Resume</button>
+                     <a href="/saiful-resume.pdf" download>
+                        <button className="btn btn-outline hover:text-lime-500 border-lime-500 border-2 text-white ml-5 md:hidden xl:block">Resume</button>
+                     </a>
                   </ul>
                </div>
             </div>
