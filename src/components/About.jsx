@@ -4,7 +4,7 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 
 const About = () => {
    return (
-      <div className='mt-32 pb-16'>
+      <div className='mt-32 pb-16' id="about">
          <h1 className='text-white text-4xl font-bold text-center my-8'>About Me</h1>
          <div className="flex items-center flex-col md:flex-row-reverse gap-12 md:gap-8 mt-16">
             <div className="w-full md:w-1/2">
