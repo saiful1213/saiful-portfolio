@@ -16,6 +16,7 @@ import Projects from '../../components/projects';
 import Contact from '../../components/contact';
 import Footer from '../../components/Footer';
 import Education from '../../components/Education';
+import About from '../../components/About';
 
 function ScrollTop(props) {
    const { children, window } = props;
@@ -74,6 +75,7 @@ export default function Home(props) {
          <Container>
             <Banner></Banner>
             <Skills></Skills>
+            <About></About>
             <Projects></Projects>
             <Education></Education>
             <Contact></Contact>
